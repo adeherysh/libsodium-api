@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "start": "vercel dev",
+    "deploy": "vercel deploy --prod"
   },
   "dependencies": {
     "body-parser": "1.19.0",
@@ -12,7 +13,7 @@
     "tweetsodium": "0.0.5"
   },
   "devDependencies": {
-    "nodemon": "1.18.4"
+    "vercel": "^19.1.1"
   },
   "keywords": []
 }
