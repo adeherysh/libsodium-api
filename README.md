@@ -8,7 +8,7 @@ This tool was created because I want to use `tweetsodium` in postman `pre-script
 ### Usage:
 Postman pre-script like this:
 ```
-var apiUrl = 'https://csb-2x6tr.vercel.app';
+var apiUrl = 'https://csb-2x6tr.vercel.app/api';
 var publicKey = 'public-key-here';
 var secretValue = 'secret-value-here';
 
