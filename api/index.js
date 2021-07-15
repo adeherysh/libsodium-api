@@ -20,7 +20,7 @@ function encrypt(value, key) {
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.post("/encrypt", (req, res) => {
+app.post("/api/encrypt", (req, res) => {
   const { secret_value, public_key } = req.body;
   const data = encrypt(secret_value, public_key);
   res.json({
@@ -28,14 +28,14 @@ app.post("/encrypt", (req, res) => {
   });
 });
 
-app.get("/", (_req, res) => {
+app.get("/api", (_req, res) => {
   res.json({
     message: "Welcome to libsodium api tools"
   });
 });
 
-app.listen(8080, () => {
-  console.log("Server running on port 8080");
-});
+// app.listen(8080, () => {
+//   console.log("Server running on port 8080");
+// });
 
 module.exports = app;
