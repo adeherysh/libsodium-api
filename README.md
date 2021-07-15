@@ -33,3 +33,4 @@ pm.sendRequest(setEncryptedValue(secretValue, publicKey), function (err, res) {
   console.log('encrypted_value', res.json().data)
 }
 ```
+
