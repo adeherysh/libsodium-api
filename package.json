@@ -2,7 +2,7 @@
   "name": "libsodium-api-for-github-secret",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "api/index.js",
   "scripts": {
     "start": "vercel dev",
     "deploy": "vercel deploy --prod"
